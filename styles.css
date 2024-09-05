@@ -1,0 +1,317 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    position: relative;
+}
+
+header {
+    background: #ffebf2;
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    max-width: 100px;
+}
+
+.navbar {
+    background-color: #ffb3c1; /* Cherry blossom pink */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ff8c9f; /* Darker pink */
+    color: white;
+}
+
+.hero {
+    background-image: url('cherry-blossom-hero.jpg');
+    background-size: cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f8b9d1; /* Fallback color */
+    transition: background-color 1s ease;
+    position: relative; /* Ensure the hero section is positioned relative */
+    z-index: 1; /* Ensure hero section is above particles */
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+}
+
+.section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f3f3; /* Light background for sections */
+    transition: background-color 1s ease;
+}
+
+.gallery {
+    background-color: #fff5f8; /* Soft pink background for gallery */
+}
+
+footer {
+    background: #ffebf2;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb3c1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px; /* Ensure text size is consistent */
+}
+
+.btn:hover {
+    background-color: #ff8c9f; /* Darker pink */
+    transform: scale(1.1); /* Grow the button to 110% of its original size */
+}
+
+a {
+    color: #ffb3c1;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #ff8c9f; /* Darker pink */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure particles don’t interfere with user interactions */
+    overflow: hidden; /* Prevent overflow */
+    z-index: 0; /* Place behind other content */
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 105, 180, 0.8); /* Dark pink particles */
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh); /* Move particles down */
+        opacity: 1;
+    }
+}
+.section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f3f3; /* Light background for sections */
+    transition: background-color 1s ease;
+}
+/* Ensure body and html allow scrolling */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    position: relative;
+}
+
+/* Example styles for sections */
+.section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f3f3; /* Light background for sections */
+    margin-bottom: 20px; /* Space between sections */
+}
+/* Basic image styling */
+.image-hover {
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+    display: block; /* Ensures the image is a block element for margin adjustments */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Hover effect */
+.image-hover:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+}
+/* Basic styling for the image and form */
+.image-container {
+    text-align: center;
+    margin: 20px;
+}
+
+#secretImage {
+    display: none; /* Hide the image initially */
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+}
+
+.access-form {
+    text-align: center;
+    margin: 20px;
+}
+
+input[type="password"] {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+}
+
+#message {
+    font-weight: bold;
+}
+/* Basic styling for the message page */
+.message-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.message-container h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.message-container p {
+    font-size: 1.2em;
+    color: #666;
+}
+body {
+    position: relative;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall 5s linear infinite;
+}
+
+body {
+    position: relative;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: fall 5s linear infinite, colorChange 3s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #FF0000;
+    }
+    14% {
+        background-color: #FF7F00;
+    }
+    28% {
+        background-color: #FFFF00;
+    }
+    42% {
+        background-color: #00FF00;
+    }
+    57% {
+        background-color: #0000FF;
+    }
+    71% {
+        background-color: #4B0082;
+    }
+    85% {
+        background-color: #8B00FF;
+    }
+    100% {
+        background-color: #FF0000;
+    }
+}
+
+.rainbow-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    padding: 15px;
+}
+
+.rainbow-navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    position: relative;
+    animation: rainbow 5s linear infinite;
+    background-size: 400%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes rainbow {
+    0% { background-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet); }
+    25% { background-image: linear-gradient(90deg, violet, red, orange, yellow, green, blue, indigo); }
+    50% { background-image: linear-gradient(90deg, indigo, violet, red, orange, yellow, green, blue); }
+    75% { background-image: linear-gradient(90deg, blue, indigo, violet, red, orange, yellow, green); }
+    100% { background-image: linear-gradient(90deg, green, blue, indigo, violet, red, orange, yellow); }
+}
+
+.rainbow-navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: 0.3s ease;
+}
